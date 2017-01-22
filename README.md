@@ -53,15 +53,16 @@ Use to commit staged changes to the local repository.
 Remove all of the change tokens in the staging area, and then...
 
 - If this is the first commit
-  1. Write any number in any hex cell (choose a cell close to the left, so you can work left to right). This is your commit node.
+  1. Write any number in any hex cell. This is your first commit.
   2. Write "master" on a sticky note and attach it to the new commit node.
   This is the master branch.
   3. Write "HEAD" on a sticky note and attach it to the master branch.
 - If this is not the first commit
-  1. Write any unused number in any unused hex cell adjacent to the HEAD cell.
-  This is the new commit. Generally work your way left to right in straight lines.
+  1. Write any unused number in any unused hex cell adjacent to the HEAD cell. This is the new commit.
   2. Draw an arrow from the new commit to the HEAD commit.
   3. Move to the new commit the branch to which HEAD is attached (thus moving HEAD too). If HEAD is not attached to a branch, move HEAD to the new commit.
+
+For your first commit, we recommend choosing a cell in the middle of the left-side of the sheet and starting with 0 or 1 has your first number. Then, as more commits are added, work your way from left to right in a straight line and using the next number in sequence (e.g., 1, 2, 3, ...). If you ever branch, continue in a straight line from along the path the new commit creates.
 
 ## `git branch NAME`
 
