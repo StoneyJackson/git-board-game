@@ -2,6 +2,12 @@
 
 The goal is to create a board game for teaching git.
 
+## Requirements
+
+- Must accurately model git
+- Must use readily available materials
+- Must be usable by students in a classroom
+
 ## Equipment
 
 - Hex paper
