@@ -35,7 +35,7 @@ The Repository is represented by a sheet of hex paper (in landscape orientation)
 ### The Staging Area and The Working Directory
 The Staging Area and the Working Directory is represented as a single sheet of blank paper (in landscape orientation). 
 
-1. Draw a line across the middle of the sheet of paper from left to right. just below the Repository. 
+1. Draw a line across the middle of the sheet of paper from left to right.
 2. Label the top half of this sheet of paper "Staging Area".
 3. Label bottom half of this sheet of paper "Working Directory".
 
