@@ -18,7 +18,7 @@ The goal is to create a board game for teaching git.
   - Writable (i.e., not the glossy ones)
 
 ## `git init`
-The command `git init` is used to set up local repository.
+The command `git init` is used to set up a local repository.
 
 In this section we will set up the game board that represents the local git repository. The game board consists of two sheets of paper - one representing the Repository, and the other representing the Staging Area and the Working Directory.
 
