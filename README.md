@@ -69,3 +69,9 @@ For your first commit, we recommend choosing a cell in the middle of the left-si
 Use to create a new branch with name NAME.
 
 1. Write NAME on a sticky note and attach it to the same node that HEAD is attached to (or the node that the branch that HEAD is attached to is attached to). Note, do not attach the new branch sticky to another branch or HEAD, just to the node.
+
+## `git checkout BRANCH|COMMIT`
+
+Use to checkout BRANCH or COMMIT to the working directory.
+
+1. Move HEAD to BRANCH or COMMIT.
