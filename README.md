@@ -19,7 +19,7 @@ The goal is to create a board game for teaching git.
 - Tokens (almost anything will do; pennies, checkers, pebbles, etc.)
 
 ## `git init`
-The command `git init` is used to set up local repository.
+The command `git init` is used to set up a local repository.
 
 In this section we will set up the game board that represents the local git repository. The game board consists of two sheets of paper - one representing the Repository, and the other representing the Staging Area and the Working Directory.
 
@@ -33,11 +33,12 @@ Working Directory</td></tr>
 ### The Repository
 The Repository is represented by a sheet of hex paper (in landscape orientation) at the top of the game board. Label this sheet of paper "Repository".
 
-### The Staging Area
-The Staging Area is represented as the top half of a sheet of blank paper (in landscape orientation) just below the Repository. Label this sheet of paper "Staging Area".
+### The Staging Area and The Working Directory
+The Staging Area and the Working Directory is represented as a single sheet of blank paper (in landscape orientation). 
 
-### The Working Directory
-The Working Directory is represented as the bottom half of the sheet of blank paper just below the Staging Area. Label this sheet of paper "Working Directory".
+1. Draw a line across the middle of the sheet of paper from left to right.
+2. Label the top half of this sheet of paper "Staging Area".
+3. Label bottom half of this sheet of paper "Working Directory".
 
 ## `git add`
 
