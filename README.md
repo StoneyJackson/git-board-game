@@ -34,7 +34,7 @@ Working Directory</td></tr>
 The Repository is represented by a sheet of hex paper (in landscape orientation) at the top of the game board. Label this sheet of paper "Repository".
 
 ### The Staging Area and The Working Directory
-The Staging Area and the Working Directory is represented as a single sheet of blank paper (in landscape orientation). 
+The Staging Area and the Working Directory is represented as a single sheet of blank paper (in landscape orientation).
 
 1. Draw a line across the middle of the sheet of paper from left to right.
 2. Label the top half of this sheet of paper "Staging Area".
@@ -62,3 +62,9 @@ Remove all of the change tokens in the staging area, and then...
   This is the new commit. Generally work your way left to right in straight lines.
   2. Draw an arrow from the new commit to the HEAD commit.
   3. Move to the new commit the branch to which HEAD is attached (thus moving HEAD too). If HEAD is not attached to a branch, move HEAD to the new commit.
+
+## `git branch NAME`
+
+Use to create a new branch with name NAME.
+
+1. Write NAME on a sticky note and attach it to the same node that HEAD is attached to (or the node that the branch that HEAD is attached to is attached to). Note, do not attach the new branch sticky to another branch or HEAD, just to the node.
