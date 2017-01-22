@@ -62,4 +62,4 @@ Remove all of the change tokens in the staging area, and then...
   2. Draw an arrow from the new commit to the HEAD commit.
   3. Move to the new commit the branch to which HEAD is attached (thus moving HEAD too). If HEAD is not attached to a branch, move HEAD to the new commit.
 
-We recommend choosing a cell in the middle of the left-side of the sheet, and start with 0 or 1 has your first number. Then, as more commits are added, work your way from left to right in a straight line. If you ever branch, continue in a straight line from along the path the new commit creates.
+For your first commit, we recommend choosing a cell in the middle of the left-side of the sheet and starting with 0 or 1 has your first number. Then, as more commits are added, work your way from left to right in a straight line and using the next number in sequence (e.g., 1, 2, 3, ...). If you ever branch, continue in a straight line from along the path the new commit creates.
