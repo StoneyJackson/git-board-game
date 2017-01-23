@@ -83,7 +83,7 @@ to refer to the BRANCH or COMMIT.
 1. If restoring files from the commit BRANCH refers to or by COMMIT would overwrite
     any local changes (in staging area or working directory), stop.
     ***TODO: How do we model this?***
-1. Replace files in working directory with those from BRANCH or COMMIT.
+2. Replace files in working directory with those from BRANCH or COMMIT.
     ***TODO: How do we model this?***
-2. Detach *HEAD* from whatever it's attached to.
-3. Attach *HEAD* to BRANCH or COMMIT.
+3. Detach *HEAD* from whatever it's attached to.
+4. Attach *HEAD* to BRANCH or COMMIT.
