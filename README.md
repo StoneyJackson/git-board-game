@@ -87,3 +87,19 @@ to refer to the BRANCH or COMMIT.
     ***TODO: How do we model this?***
 3. Detach *HEAD* from whatever it's attached to.
 4. Attach *HEAD* to BRANCH or COMMIT.
+
+## `git merge BRANCH`
+
+Use to merge BRANCH into commit referred to by *HEAD*.
+
+1. Merge all files from BRANCH and *HEAD* in the working directory.
+    ***TODO: How do we model this?***
+2. If any mergers syntactically conflict, mark the conflict in the working directory
+   and stop.
+    ***TODO: How do we model this?***
+3. Write the next unused integer in an unused cell adjacent to *HEAD*. This is
+    the merge commit.
+4. Draw an arrow from the merge commit and *HEAD*.
+5. Draw an arrow from the merge commit and BRANCH.
+6. Move the branch referred to by *HEAD* to the merge commit along with *HEAD*.
+    If *HEAD* does not refer to a branch, just move *HEAD*.
