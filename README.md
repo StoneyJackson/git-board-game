@@ -50,28 +50,33 @@ Move any number of change tokens from the working directory to the staging area.
 
 Use to commit staged changes to the local repository.
 
-Remove all of the change tokens in the staging area, and then...
-
-- If this is the first commit
-  1. Write any number in any hex cell. This is your first commit.
-  2. Write "master" on a sticky note and attach it to the new commit node.
-  This is the master branch.
-  3. Write "HEAD" on a sticky note and attach it to the master branch.
-- If this is not the first commit
-  1. Write any unused number in any unused hex cell adjacent to the HEAD cell. This is the new commit.
-  2. Draw an arrow from the new commit to the HEAD commit.
-  3. Move to the new commit the branch to which HEAD is attached (thus moving HEAD too). If HEAD is not attached to a branch, move HEAD to the new commit.
-
-For your first commit, we recommend choosing a cell in the middle of the left-side of the sheet and starting with 0 or 1 has your first number. Then, as more commits are added, work your way from left to right in a straight line and using the next number in sequence (e.g., 1, 2, 3, ...). If you ever branch, continue in a straight line from along the path the new commit creates.
+1. Remove all of the change tokens in the staging area
+2. If this is the first commit
+  1. Write a 1 in a hex cell midway down on the left side of your paper.
+      This is your first commit.
+  2. Write *master* on a sticky note and attach it to the new commit node.
+      This is the master branch.
+  3. Write *HEAD* on a sticky note and attach it to the master branch. *HEAD*
+      now refers to *master*, which refers to commit 1, and therefore refers to
+      commit 1 indirectly through *master*.
+3. If this is not the first commit
+  1. Write the next unused integer in any unused hex cell adjacent to the
+      commit HEAD refers to (prefer unused cells in the same direction
+      established by the previous two commits, or to the right). This is the
+      new commit.
+  2. Draw an arrow from the new commit to the commit HEAD refers to.
+  3. Move the branch head refers to to the new commit along with HEAD. If HEAD
+      does not refer to a branch, move HEAD to the new commit.
 
 ## `git branch NAME`
 
 Use to create a new branch with name NAME.
 
-1. Write NAME on a sticky note and attach it to the same node that HEAD is attached to (or the node that the branch that HEAD is attached to is attached to). Note, do not attach the new branch sticky to another branch or HEAD, just to the node.
+1. Write NAME on a sticky note and attach it to the commit that HEAD refers to.
 
 ## `git checkout BRANCH|COMMIT`
 
 Use to checkout BRANCH or COMMIT to the working directory.
 
-1. Move HEAD to BRANCH or COMMIT.
+1. Detach HEAD from whatever it's attached to.
+2. Attach HEAD to BRAND or COMMIT.
