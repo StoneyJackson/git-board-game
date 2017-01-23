@@ -70,13 +70,20 @@ Use to commit staged changes to the local repository.
 
 ## `git branch NAME`
 
-Use to create a new branch with name NAME.
+Use to create a new branch named NAME.
 
-1. Write NAME on a sticky note and attach it to the commit that HEAD refers to.
+1. If a branch named NAME exists, stop.
+2. Write NAME on a sticky note and attach it to the commit that HEAD refers to.
 
 ## `git checkout BRANCH|COMMIT`
 
-Use to checkout BRANCH or COMMIT to the working directory.
+Use to update working directory with files from BRANCH or COMMIT and update HEAD
+to refer to the BRANCH or COMMIT.
 
-1. Detach HEAD from whatever it's attached to.
-2. Attach HEAD to BRAND or COMMIT.
+1. If restoring files from the commit BRANCH refers to or by COMMIT would overwrite
+    any local changes (in staging area or working directory), stop.
+    ***TODO: How do we model this?***
+1. Replace files in working directory with those from BRANCH or COMMIT.
+    ***TODO: How do we model this?***
+2. Detach HEAD from whatever it's attached to.
+3. Attach HEAD to BRANCH or COMMIT.
