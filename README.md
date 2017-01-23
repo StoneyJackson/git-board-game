@@ -61,23 +61,23 @@ Use to commit staged changes to the local repository.
       commit 1 indirectly through *master*.
 3. If this is not the first commit
   1. Write the next unused integer in any unused hex cell adjacent to the
-      commit HEAD refers to (prefer unused cells in the same direction
+      commit *HEAD* refers to (prefer unused cells in the same direction
       established by the previous two commits, or to the right). This is the
       new commit.
-  2. Draw an arrow from the new commit to the commit HEAD refers to.
-  3. Move the branch head refers to to the new commit along with HEAD. If HEAD
-      does not refer to a branch, move HEAD to the new commit.
+  2. Draw an arrow from the new commit to the commit *HEAD* refers to.
+  3. Move the branch *HEAD* refers to to the new commit along with *HEAD*.
+      If *HEAD* does not refer to a branch, move *HEAD* to the new commit.
 
 ## `git branch NAME`
 
 Use to create a new branch named NAME.
 
 1. If a branch named NAME exists, stop.
-2. Write NAME on a sticky note and attach it to the commit that HEAD refers to.
+2. Write NAME on a sticky note and attach it to the commit that *HEAD* refers to.
 
 ## `git checkout BRANCH|COMMIT`
 
-Use to update working directory with files from BRANCH or COMMIT and update HEAD
+Use to update working directory with files from BRANCH or COMMIT and update *HEAD*
 to refer to the BRANCH or COMMIT.
 
 1. If restoring files from the commit BRANCH refers to or by COMMIT would overwrite
@@ -85,5 +85,5 @@ to refer to the BRANCH or COMMIT.
     ***TODO: How do we model this?***
 1. Replace files in working directory with those from BRANCH or COMMIT.
     ***TODO: How do we model this?***
-2. Detach HEAD from whatever it's attached to.
-3. Attach HEAD to BRANCH or COMMIT.
+2. Detach *HEAD* from whatever it's attached to.
+3. Attach *HEAD* to BRANCH or COMMIT.
